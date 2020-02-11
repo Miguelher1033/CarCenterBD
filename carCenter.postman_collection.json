@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "49c482a9-8e92-452e-b140-f98ab030fe3a",
+		"name": "carCenter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://localhost:50412/Api/eliminarCliente/CC/122",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50412/Api/eliminarCliente/CC/122",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50412",
+					"path": [
+						"Api",
+						"eliminarCliente",
+						"CC",
+						"122"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50412/Api/actualizarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipo_documento\": \"CC\",\r\n  \"documento\": 39987124,\r\n  \"primer_nombre\": \"Sara\",\r\n  \"segundo_nombre\": \"Gimena\",\r\n  \"primer_apellido\": \"Ariass\",\r\n  \"segundo_apellido\": \"Gomezz\",\r\n  \"celular\": \"3112679833\",\r\n  \"direccion\": \"Carrera 8 # 34-21\",\r\n  \"email\": \"sara@hotmail.co\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50412/Api/actualizarCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50412",
+					"path": [
+						"Api",
+						"actualizarCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50412/Api/insertarCliente",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipo_documento\": \"CC\",\r\n  \"documento\": 39987125,\r\n  \"primer_nombre\": \"Sara\",\r\n  \"segundo_nombre\": \"Maria\",\r\n  \"primer_apellido\": \"Arias\",\r\n  \"segundo_apellido\": \"Gomez\",\r\n  \"celular\": \"3112679834\",\r\n  \"direccion\": \"Carrera 8 # 34-20\",\r\n  \"email\": \"sara@hotmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:50412/Api/insertarCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50412",
+					"path": [
+						"Api",
+						"insertarCliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50412/Api/consultarCliente/CC/39987125",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50412/Api/consultarCliente/CC/39987125",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50412",
+					"path": [
+						"Api",
+						"consultarCliente",
+						"CC",
+						"39987125"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
